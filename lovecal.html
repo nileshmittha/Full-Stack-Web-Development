@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+</head>
+
+<style>
+    body {
+        background-color: aqua;
+    }
+
+    h1 {
+
+        text-align: center;
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        font-size: 4rem;
+    }
+
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        font-size: 1.5rem;
+
+        text-align: center;
+    }
+
+    div {
+
+
+        width: 800px;
+        margin: auto;
+    }
+
+    button {
+
+        width: 30%;
+
+        height: 50px;
+
+        margin-left: 20%;
+
+        margin-top: 30px;
+
+        background-color: black;
+
+        color: aliceblue;
+
+        border: 2px solid white;
+
+        border-radius: 10px 10px;
+
+        font-size: 1.5rem;
+
+
+    }
+
+    button:hover{
+
+        background-color: aqua;
+
+        color: black;
+    }
+
+    .lave {
+        margin-left: 30%;
+
+        margin-top: 50px;
+    }
+    label{
+
+        color: rgb(236, 193, 0);
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        font-size: 1.5rem;
+    }
+
+    input{
+
+        height: 30px;
+
+        border: 3px solid greenyellow;
+
+        border-radius: 10px 10px;
+    }
+
+
+</style>
+
+<body>
+
+    <marquee behavior="90s" direction="right"><h1>LOVE CALCULATOR!!!!</h1></marquee>
+
+    <hr>
+
+    <div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis praesentium temporibus illum harum odit
+            consequatur iure enim blanditiis a! Perferendis, magnam, consequuntur tenetur tempore illo, eaque deleniti
+            sed doloremque consectetur ipsam cupiditate labore soluta! Cum magnam quisquam atque tempora vitae commodi
+            ab minus quae esse? Aut omnis, perferendis earum tempora dicta autem, vel ipsum velit, eius dolore quo cum
+            eveniet.</p>
+
+    </div>
+
+    <div class="lave">
+        <label for="uname">Ypur Name: </label>
+        <input type="text" name="uname" id="01">
+
+        <label for="xname">Ex Name: </label>
+        <input type="text" name="xname" id="02">
+
+
+        <button onclick="check()">Check Now!</button>
+
+    </div>
+
+</body>
+
+<script>
+
+
+
+
+
+    function check() {
+
+        var name = document.getElementById("01").value;
+        var exname = document.getElementById("02").value;
+
+      
+
+       
+
+        var lovescore = Math.random() * 100;
+
+
+        lovescore = Math.floor(lovescore)+1;
+
+
+
+        // lovescore=Math.floor(lovescore);
+
+        alert("YOUR CHEMISTRY WILL BE STRONG "+lovescore+"%");
+        alert("Thank U "+name)
+
+        // alert(Math.random(n));
+    }
+</script>
+
+</html>
