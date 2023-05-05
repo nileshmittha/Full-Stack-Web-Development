@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice</title>
+
+
+    <link rel="stylesheet" href="age.css">
+</head>
+
+<style>
+    h1 {
+        font-size: 3rem;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        color: aquamarine;
+    }
+
+    h2 {
+        font-size: 15rem;
+
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        color: aquamarine;
+        margin-left: 40px;
+    }
+
+
+    body {
+
+        background-color: black;
+    }
+
+    button {
+
+        font-size: 3rem;
+
+        background-color: rgb(242, 255, 0);
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        color: aqua;
+
+
+
+        border: 2px solid blue;
+
+        border-radius: 10px 10px 10px 10px;
+
+        width: 30%;
+
+        height: 80px;
+
+        margin-left: 35%;
+        margin-top: 50px;
+    }
+
+
+    button:hover {
+
+        background-color: greenyellow;
+
+        color: black;
+    }
+</style>
+
+<body>
+
+    <h1>REVERSE STRING!! </h1>
+
+    <hr>
+
+
+    <button onclick="b1()">CLICK NOW</button>
+
+    <h2>OUTPUT!!</h2>
+
+</body>
+
+<script>
+    function b1() {
+
+        var name = prompt("Enetr Your Name:");
+
+        var reverse = "_";
+
+        var i;
+
+        var s1 = 1;
+
+        var l1 = name.length;
+
+        for (i = 0; i < name.length; i++) {
+
+
+
+            reverse = reverse + name.slice(name.length - s1, l1);
+
+            s1 = s1 + 1;
+
+            l1 = l1 - 1;
+        }
+
+
+
+
+
+        document.querySelector('h2').innerHTML = reverse;
+
+
+    }
+</script>
+
+</html>
