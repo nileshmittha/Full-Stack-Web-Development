@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In HTML</title>
+</head>
+
+<style>
+    div {
+
+        display: inline-block;
+        width: 30%;
+        height: 400px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+
+        margin-top: 60px;
+
+        margin-right: 20px;
+
+
+    }
+
+    button {
+
+        background-color: red;
+        padding: 10px 14px;
+        border: 2px solid black;
+        color: white;
+
+        border-radius: 8px;
+
+    }
+
+    span{
+
+        color:blue;
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        font-size: 1.5rem;
+    }
+</style>
+
+<body>
+
+    <div>
+
+        <center>
+            <h1>Container 1</h1>
+
+            <p id="par">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse natus, dolore neque aliquid sequi iste
+                amet laboriosam laudantium ipsum sed nesciunt error, recusandae explicabo quia accusamus perspiciatis.
+                Officiis quae ullam totam in cumque? Aut blanditiis, similique dicta, deleniti dignissimos accusamus
+                quos est illum sit impedit in at provident repudiandae doloremque! Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptates dolorem voluptate adipisci harum earum ex vitae molestiae
+                blanditiis ullam? Aspernatur aut eaque minima, corporis quam maxime eos fugit architecto! Tempora,
+                voluptatem nobis! Nisi natus itaque ex quod expedita quis repudiandae laboriosam cum! Fugit, inventore
+                at!
+            </p>
+
+            <button onclick="pa()">Hide PARA</button>
+
+        </center>
+
+
+    </div>
+
+    <div>
+
+        <center>
+            <h1>Container 2</h1>
+
+            <p id="MouseOUT">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse natus, dolore neque aliquid sequi iste
+                amet laboriosam laudantium ipsum sed nesciunt error, recusandae explicabo quia accusamus perspiciatis.
+                Officiis quae ullam totam in cumque? Aut blanditiis, similique dicta, deleniti dignissimos accusamus
+                quos est illum sit impedit in at provident repudiandae doloremque! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Natus sed libero, quas error reiciendis pariatur, distinctio quasi non
+                quae minus doloribus dignissimos laudantium magni nihil tempora. Ea architecto eligendi in quas
+                similique voluptas consectetur labore nulla esse iusto beatae tenetur, amet, accusantium id pariatur
+                perferendis. Lorem ipsum dolor sit amet.
+
+
+            </p>
+
+            <span id="id1">Nothing is here</span>
+
+            <button>MouseOver</button>
+
+        </center>
+
+
+    </div>
+
+
+    <div>
+
+        <center>
+            <h1>Container 3</h1>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse natus, dolore neque aliquid sequi iste
+                amet laboriosam laudantium ipsum sed nesciunt error, recusandae explicabo quia accusamus perspiciatis.
+                Officiis quae ullam totam in cumque? Aut blanditiis, similique dicta, deleniti dignissimos accusamus
+                quos est illum sit impedit in at provident repudiandae doloremque! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Suscipit eligendi qui similique eaque, doloribus sequi ratione impedit
+                beatae reprehenderit accusamus rem fuga consequatur itaque culpa animi nemo! Quibusdam sequi deserunt
+                doloremque reprehenderit, unde hic distinctio id tenetur doloribus ratione dolorum commodi iste ex
+                nesciunt expedita?
+            </p>
+
+            <button>MouseOUT</button>
+
+
+
+        </center>
+
+
+    </div>
+
+    <script>
+
+        let mout = document.getElementById('MouseOUT');
+        let leb = document.getElementById("id1");
+
+
+
+
+        function msout() {
+
+
+            leb.innerText = "MOUSE OUT";
+            // alert("Mouse OUT");
+
+
+        }
+
+        mout.addEventListener('mouseout', msout);
+
+
+        function msover() {
+
+            leb.innerText = "MOUSE OVER";
+
+            // alert("Mouse OVER Listner");
+
+
+        }
+
+        mout.addEventListener('mouseover', msover);
+
+
+
+
+
+
+
+
+        function pa() {
+
+            let para = document.getElementById('par');
+
+            if (para.style.display != 'none') {
+
+                para.style.display = 'none';
+
+
+            } else {
+
+                para.style.display = 'block';
+
+
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>
